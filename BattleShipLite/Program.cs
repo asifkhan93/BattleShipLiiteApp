@@ -144,9 +144,9 @@ namespace BattleShipLite
                 {
                     Console.Write(" ? ");
                 }
-                Console.WriteLine();
-                Console.WriteLine();
             }
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
         private static void WelcomeMessage()
@@ -188,7 +188,7 @@ namespace BattleShipLite
                 Console.Write($"Where do you want to place ship number {model.ShipLocations.Count + 1}: ");
                 string location = Console.ReadLine();
 
-                bool isValidlocation = false;
+                bool isValidlocation = true;
                 try
                 {
                     bool isValidLocation = GameLogic.PlaceShip(model, location);
